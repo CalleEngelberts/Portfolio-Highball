@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Fraunces', ui-serif, Georgia, 'Times New Roman', serif;
+
+  --color-paper: #ffffff;
+  --color-mist: #f6f6f4;
+  --color-fog: #eeece8;
+  --color-line: #e3e0da;
+  --color-ink: #1c1c1a;
+  --color-graphite: #55524c;
+  --color-slate: #8a8680;
+
+  --color-accent-50: #f1f5f1;
+  --color-accent-100: #dde8dd;
+  --color-accent-200: #bcd0bd;
+  --color-accent-300: #93b094;
+  --color-accent-400: #6b906d;
+  --color-accent-500: #4f764f;
+  --color-accent-600: #3d603e;
+  --color-accent-700: #314e32;
+
+  --color-night: #16171a;
+  --color-night-soft: #1d1f23;
+  --color-night-line: #2a2d33;
+  --color-night-text: #e7e5e0;
+  --color-night-slate: #9a978f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-accent-200);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent-500);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .fade-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+.before-after-slider input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: ew-resize;
+}
+
+.before-after-slider input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 3px;
+  height: 100%;
+  background: var(--color-accent-500);
+}
+
+.before-after-slider input[type='range']::-moz-range-thumb {
+  width: 3px;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  background: var(--color-accent-500);
+}
