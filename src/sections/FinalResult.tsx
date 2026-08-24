@@ -4,7 +4,7 @@ import { MediaPlaceholder, Reveal } from '@/components/MediaPlaceholder';
 import finalHome from '../assets/finalHome.png';
 import finalHomeMobile from '../assets/finalHomeMobile.png';
 import finalStory from '../assets/finalStory.png';
-import finalStoryMobile from '../assets/finalStoryMobile.png';
+import finalStoryMobile from '../assets/finalFlavorMobile.png';
 import finalFlavor from '../assets/finalFlavor.png';
 import finalFlavorMobile from '../assets/finalFlavorMobile.png';
 import finalWachtlijst from '../assets/finalWachtlijst.png';

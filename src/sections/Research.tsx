@@ -1,7 +1,7 @@
 import { SectionHeader } from '@/components/ui';
 import { MediaPlaceholder, Reveal } from '@/components/MediaPlaceholder';
 import { Lightbulb } from 'lucide-react';
-import moodboard from "../assets/moodboard.png";
+import moodboard from "../assets/Moodboard.png";
 
 const refs = [
   { label: 'Experience website references', caption: 'Scroll-based product storytelling and premium pacing.' },
