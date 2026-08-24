@@ -1,6 +1,7 @@
 import { SectionHeader } from '@/components/ui';
 import { MediaPlaceholder, Reveal } from '@/components/MediaPlaceholder';
 import { Lightbulb } from 'lucide-react';
+import moodboard from "../assets/moodboard.png";
 
 const refs = [
   { label: 'Experience website references', caption: 'Scroll-based product storytelling and premium pacing.' },
@@ -21,13 +22,13 @@ export function Research() {
         />
 
         <div className="mt-12 lg:mt-16">
-          <MediaPlaceholder
-            label="Moodboard — collected visual references"
+          <img
+            src={moodboard}
             alt="A moodboard collecting visual references for the High-Ball Club project."
-            aspect="16 / 8"
-          />
+           className="w-full rounded-2xl object-cover"
+           />
 
-          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {/* <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {refs.map((r) => (
               <MediaPlaceholder
                 key={r.label}
@@ -37,7 +38,7 @@ export function Research() {
                 caption={r.caption}
               />
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-14 grid gap-8 lg:grid-cols-2 lg:gap-12">
@@ -46,25 +47,41 @@ export function Research() {
               Main conclusions
             </h3>
             <p className="mt-3 max-w-prose text-[15px] leading-[1.75] text-graphite">
-              The strongest references combined generous whitespace, a single
-              confident accent colour and a scroll experience that revealed the
-              product step by step. A heavy, decorative treatment would compete
-              with the product itself, so the direction leaned toward restraint.
+              My initial inspiration came from experience websites such as <a href="https://sowieso.wero-wallet.eu/nl-en/merchant" className="text-blue-500 hover:text-blue-600">Wero</a>, 
+              where I explored different types of animations and interactions 
+              that I could potentially use for my own showcase. <br /> <br />
+
+              I also looked at brand websites such as <a href="https://www.jackdaniels.com/" className="text-blue-500 hover:text-blue-600">Jack Daniel’s</a> and <a href="https://www.warsteiner.com/" className="text-blue-500 hover:text-blue-600">Warsteiner</a>. 
+              These websites showed me examples of how a brand can be presented in a professional way 
+              using product imagery, video, fonts and animations. <br /> <br />
+              The biggest source of inspiration was the Heineken website. 
+              I especially liked the overall structure, 
+              visual style and way the brand and products are presented. 
+              Because of this, my final website design is mainly based on the 
+              approach and experience of the <a href="https://www.heineken.com/" className="text-blue-500 hover:text-blue-600">Heineken website</a>, while still adding our own twist with animations and a 3D can design.
+
             </p>
           </Reveal>
           <Reveal>
             <h3 className="text-[14px] font-medium uppercase tracking-wider text-slate">
-              Interviews with the founding team
+              Interviews with the team
             </h3>
             <p className="mt-3 max-w-prose text-[15px] leading-[1.75] text-graphite">
-              Early conversations with the group focused on who the drink is for
-              and how it should feel. The shared ambition was a premium but
-              approachable identity, not a traditional or formal spirit brand.
+              To get a clearer idea of how the website should look and feel, 
+              I interviewed two members of the team behind HIGH-BALL about the 
+              brand identity, target audience and tone of voice. <br /> <br />
+
+              The main conclusion was that HIGH-BALL should feel premium, tasteful and 
+              honest, while still being approachable. 
+              The product and its quality should always be the main focus, 
+              without overcomplicating the story. I used these insights as a 
+              guideline for the website, aiming for a clean and premium visual style 
+              that puts the product at the centre of the experience.
             </p>
           </Reveal>
         </div>
 
-        <Reveal className="mt-10 border-l-2 border-accent-500 bg-accent-50 px-6 py-5">
+        {/* <Reveal className="mt-10 border-l-2 border-accent-500 bg-accent-50 px-6 py-5">
           <div className="flex items-start gap-3">
             <Lightbulb size={18} className="mt-0.5 shrink-0 text-accent-600" aria-hidden />
             <p className="text-[15px] leading-[1.7] text-ink">
@@ -73,7 +90,7 @@ export function Research() {
               or formal.
             </p>
           </div>
-        </Reveal>
+        </Reveal> */}
       </div>
     </section>
   );

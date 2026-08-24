@@ -14,17 +14,14 @@ export function Links() {
             View the project
           </h2>
           <p className="mt-5 max-w-xl text-[16px] leading-[1.7] text-graphite">
-            High-Ball Club — Creative, Design &amp; Technology Showcase by
+            HIGHBALL CLUB - Creative, Design &amp; Technology Showcase by
             Calle Engelberts, 2026.
           </p>
         </Reveal>
 
         <Reveal className="mt-8 flex flex-wrap gap-3">
-          <Button href="#links" external withArrow variant="primary">
+          <Button href="https://showcase-highball.vercel.app" external withArrow variant="primary">
             View live website
-          </Button>
-          <Button href="#links" external withArrow variant="secondary">
-            Read project report
           </Button>
         </Reveal>
       </div>

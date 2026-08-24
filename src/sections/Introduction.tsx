@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui';
 import { MediaPlaceholder, Reveal } from '@/components/MediaPlaceholder';
+import websiteVideo from "../assets/homepagevideo.mp4";
 
 export function Introduction() {
   return (
@@ -10,16 +11,16 @@ export function Introduction() {
             Portfolio case study
           </span>
           <h1 className="font-serif mt-5 text-[clamp(2.75rem,7vw,5rem)] leading-[1.02] tracking-[-0.01em] text-ink">
-            High-Ball Club
+            HIGH-BALL CLUB
           </h1>
           <p className="mt-6 max-w-2xl text-[18px] leading-[1.5] text-graphite lg:text-[20px]">
             An interactive product experience website for a premium sparkling
             whisky cocktail.
           </p>
           <p className="mt-6 max-w-xl text-[16px] leading-[1.7] text-graphite">
-            For my Creative, Design &amp; Technology Showcase, I created the
+            For my Showcase of the minor Creative, Design &amp; Technology, I created the
             brand direction, product design, 3D model and interactive website
-            for High-Ball Club.
+            for the drink HIGH-BALL CLUB.
           </p>
         </Reveal>
 
@@ -60,22 +61,25 @@ export function Introduction() {
           </Reveal>
 
           <Reveal className="flex flex-wrap gap-3">
-            <Button href="#links" external withArrow>
+            <Button href="https://showcase-highball.vercel.app" external withArrow>
               View live project
             </Button>
-            <Button href="#process" variant="secondary">
+            {/* <Button href="#process" variant="secondary">
               View project process
-            </Button>
+            </Button> */}
           </Reveal>
         </div>
 
-        <MediaPlaceholder
-          label="Final website video or homepage screenshot"
-          video
-          alt="Final High-Ball Club website shown as a video recording or homepage screenshot."
-          aspect="16 / 9"
-          className="mt-14"
-        />
+       <div className="mt-14">
+  <video
+    src={websiteVideo}
+    className="w-full rounded-2xl"
+    autoPlay
+    loop
+    muted
+    playsInline
+  />
+</div>
       </div>
     </section>
   );

@@ -1,11 +1,12 @@
 import { SectionHeader } from '@/components/ui';
 import { MediaPlaceholder, Reveal } from '@/components/MediaPlaceholder';
+import canYuzu from "../assets/canYuzu.png";
 
 const goals = [
   {
     no: '01',
     title: 'Create a recognisable brand identity.',
-    text: 'A visual language that reads as premium and refreshing from the first impression.',
+    text: 'Giving a premium and refreshing feel from the first impression.',
   },
   {
     no: '02',
@@ -14,8 +15,8 @@ const goals = [
   },
   {
     no: '03',
-    title: 'Guide visitors from product discovery towards the waiting list.',
-    text: 'A guided flow that moves from story to interest to sign-up without pressure.',
+    title: 'Encourage visitors to sign up for the waiting list.',
+    text: 'Build interest in the product and make signing up feel like the next step',
   },
 ];
 
@@ -25,9 +26,9 @@ export function Challenge() {
       <div className="mx-auto max-w-[1200px] px-6 lg:px-10">
         <SectionHeader
           index="02"
-          label="The challenge"
-          title="The challenge"
-          intro="The challenge was to turn a new drink concept into a recognisable digital experience. The website needed to feel premium and refreshing while clearly introducing the product and story."
+          label="The project"
+          title="The project"
+          intro="The project was to turn a new drink concept into a digital showcase experience. The website needed to feel premium while also clearly introducing the product and story."
         />
 
         <div className="mt-12 grid gap-px border border-line bg-line sm:grid-cols-3 lg:mt-16">
@@ -48,12 +49,11 @@ export function Challenge() {
           ))}
         </div>
 
-        <MediaPlaceholder
-          label="Final can design or product image"
-          alt="Final High-Ball Club can design shown on a clean background."
-          aspect="16 / 9"
-          className="mt-12"
-        />
+        <img
+            src={canYuzu}
+            alt="A moodboard collecting visual references for the High-Ball Club project."
+           className="w-full rounded-2xl object-cover"
+           />
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 import { SectionHeader } from '@/components/ui';
 import { MediaPlaceholder, Reveal } from '@/components/MediaPlaceholder';
 
+
 const rows = [
   {
     challenge: 'Outdated React routing syntax',
@@ -30,7 +31,7 @@ export function Challenges() {
           index="09"
           label="Iterations"
           title="Challenges and solutions"
-          intro="The project did not go directly from the first idea to the final result. These are three of the moments that required a real change of approach."
+          intro="The project did not go directly from the first idea to the final result. These are some examples of the moments that required a real change of approach."
         />
 
         <div className="mt-12 space-y-px border-y border-line bg-line lg:mt-16">

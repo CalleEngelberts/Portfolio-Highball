@@ -33,7 +33,7 @@ export function Overview() {
         <div className="mt-12 grid gap-12 lg:mt-16 lg:grid-cols-2 lg:gap-16">
           <Reveal>
             <p className="max-w-prose text-[16px] leading-[1.75] text-graphite">
-              High-Ball Club is a premium sparkling whisky cocktail concept
+              HIGH-BALL CLUB is a premium sparkling whisky cocktail concept
               created with a group of friends. The goal of this Showcase
               project was to design and build an interactive website that
               presents the product, explains the brand story and allows

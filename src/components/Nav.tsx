@@ -75,12 +75,12 @@ export function Nav() {
               {item.label}
             </a>
           ))}
-          <a
+          {/* <a
             href="#links"
             className="ml-1 inline-flex items-center gap-1.5 border border-ink bg-ink px-4 py-2 text-[13px] font-medium text-white transition-colors duration-200 hover:bg-ink/85"
           >
             View live project
-          </a>
+          </a> */}
         </div>
 
         <button

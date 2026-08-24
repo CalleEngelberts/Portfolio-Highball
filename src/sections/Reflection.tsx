@@ -5,40 +5,50 @@ const categories = [
   {
     title: 'Creative development',
     items: [
+      'Photoshop can design',
+      'Blender 3D modelling',
+      'Illustrator moodboard',
       'Brand identity',
-      'Can design',
-      'Visual hierarchy',
+      'UI/UX design',
+      'High/low fidelity prototyping',
       'Storytelling',
-      'Iteration',
+      'Responsive design'
+    
     ],
   },
   {
     title: 'Technical development',
     items: [
-      'React',
-      'Browser-based 3D',
-      'Scroll animation',
+      'React + Vite configuration',
+      'Talwind CSS styling',
+      'Three.js & React Three Fiber',
+      'Scroll animation (GSAP ScrollTrigger)',
       'Responsive development',
       'Form and email integration',
+      'Lazy loading & performance optimization',
+      'SEO/Privacy integration'
+      
     ],
   },
   {
     title: 'Process development',
     items: [
-      'Breaking a large project into smaller prototypes',
-      'Researching tools',
-      'Testing different solutions',
+      'Researching',
+      'Exploring tools',
       'Documenting problems and improvements',
+      'Version control on Github',
+      'Testing',
+      'Deployment and hosting',
     ],
   },
 ];
 
-const improvements = [
-  'More user testing',
-  'Accessibility testing',
-  'Performance optimisation',
-  'Production-ready waiting-list infrastructure',
-];
+// const improvements = [
+//   'More user testing',
+//   'Accessibility testing',
+//   'Performance optimisation',
+//   'Production-ready waiting-list infrastructure',
+// ];
 
 export function Reflection() {
   return (
@@ -69,13 +79,17 @@ export function Reflection() {
 
         <Reveal className="mt-14 border-t border-line pt-8">
           <h3 className="text-[14px] font-medium uppercase tracking-wider text-slate">
-            What I would improve next
+            What I would do differently next time
           </h3>
           <p className="mt-4 max-w-prose text-[15px] leading-[1.75] text-graphite">
-            With more time, I would focus on four areas that would move the
-            project closer to a production-ready product.
+            
+One thing I would've done differently is doing a bit more research into the tools I used. Spent time exploring WebGL and following tutorials with some assignemnts. While it gave me good idea of how 3D rendering works I realized later that Three.js is  WebGL but better, with more built-in functionality and its faster. So if I could go back, I would have switched to Three.js earlier. <br /> <br />
+
+I also spent time being unsure of the overall web design, I am happy with the final result but sometimes think I could've focused it more around the drink can. If I had more time I would've tried to make a product video as header image that you can interact with through scrolling, it would've been a more professional look and more eye catching than the interactable 3D can model I have now. But maybe I can add it in the future. <br /> <br />
+
+And lastly I learned that you sometimes need to finish what you started, because when I finished my first can design in Blender, the top lid kept rendering badly. Spent a lot of time on it but eventually gave up and put the badly rendered can in the website. But later I was super frustrated with how ugly it looked, and ended up going back and redoing it following the same tutorial more carefully. So basically wasted time by not redoing it in the first place and having to do it last moment. So next time, I just need to finish what I start so I can move on with the next part of the project instead of going back and redoing things I should've finished already.  
           </p>
-          <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+          {/* <ul className="mt-6 grid gap-3 sm:grid-cols-2">
             {improvements.map((imp) => (
               <li
                 key={imp}
@@ -85,7 +99,7 @@ export function Reflection() {
                 {imp}
               </li>
             ))}
-          </ul>
+          </ul> */}
         </Reveal>
       </div>
     </section>

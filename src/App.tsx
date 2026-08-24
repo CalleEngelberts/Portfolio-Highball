@@ -27,12 +27,12 @@ export default function App() {
         <UxWireframes />
         <ThreeDModel />
         <WebsiteDevelopment />
-        <Challenges />
+        {/* <Challenges /> */}
         <FinalResult />
         <Reflection />
         <Links />
       </main>
-      <Footer />
+      
     </div>
   );
 }

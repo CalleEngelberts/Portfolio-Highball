@@ -6,7 +6,7 @@ const phases = [
   { no: '2', title: 'Brand and can design', text: 'Sketches, typography, colour and the final can.' },
   { no: '3', title: 'UX and wireframes', text: 'Structure, user flow and high-fidelity screens.' },
   { no: '4', title: '3D modelling and development', text: 'Blender model, React build and scroll animations.' },
-  { no: '5', title: 'Testing and refinement', text: 'Review, fixes and the final polished result.' },
+  { no: '5', title: 'Testing and refinement', text: 'Review, fixes and the final result.' },
 ];
 
 export function Process() {
