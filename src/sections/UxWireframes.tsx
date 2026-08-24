@@ -174,7 +174,7 @@ export function UxWireframes() {
 
 
         {/* EXPLANATION */}
-        <Reveal className="mt-8 max-w-prose space-y-3">
+        {/* <Reveal className="mt-8 max-w-prose space-y-3"> */}
           
           {/* <p className="text-[15px] leading-[1.75] text-graphite">
             <span className="font-medium text-ink">
@@ -203,7 +203,7 @@ export function UxWireframes() {
             without competing choices.
           </p> */}
 
-        </Reveal>
+        {/* </Reveal> */}
 
       </div>
     </section>
